@@ -1,0 +1,322 @@
+/*yatay menü üzerine gelince renk degiştirme */
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+    
+}
+nav ul li:last-child{
+    margin-right: 0px;
+}
+nav ul li a {
+    display: block;
+    height: 50px;
+    padding: 0 30px;
+    background-color: aquamarine;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration :none;
+    position: relative;
+}
+nav li a::after{
+    content: "";
+    display: block;
+    position: absolute; 
+    left: 0;
+    bottom:0;
+    width: 0%;
+    height: 2px;
+    background-color: darkblue;
+    transition: 200ms all;
+}
+nav ul li a:hover::after{
+    width:100%
+}
+nav ul li a:hover{
+    background-color: rgb(173, 84, 133);
+}
+
+.box{
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    background-color: rgb(127, 168, 164);
+}
+.box img{
+    width: 100%;
+    height: auto;
+    opacity: 20%;
+}
+.link a {
+    text-decoration: none;
+    padding: 10px;
+}
+.butun{
+    width: 500px;
+    height: 600px;
+    background-color:hotpink;
+}
+
+.box1{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(202, 117, 117);
+        border: 3px solid  teal;
+        border-radius: 10px;
+        position: sticky;
+        left: 30px;
+        top: 0px;
+    }
+    .box2{
+        width: 100px;
+        height: 100px;
+        background-color:rgb(187, 88, 88);
+        border: 4px solid red;
+        border-radius: 12px;
+        position: relative;
+        left: 40px;
+        top: 20px;
+    }
+    .box3{
+        width: 100px;
+        height: 100px;
+        background-color:rgb(177, 68, 68);
+        position: sticky;
+        top: 10px;
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color:dodgerblue;
+            position: absolute;
+            left: 400px;
+        }
+        .box5{
+            width: 100px;
+            height: 100px;
+            background-color:rgb(223, 93, 184);
+        }
+        .box6{
+            width: 100px;
+            height: 100px;
+            background-color:rgb(0, 96, 205);
+            color: rgb(81, 167, 164);
+            position:relative;
+            left: 60px;
+            top: 20px;
+        }
+        .resim {
+            width: 100px;
+            height: auto;
+            cursor: move;
+            }
+
+            .resim + img{
+                width: 400px;
+                height: auto;
+                display: none;
+                position: absolute;
+            }
+            .resim:hover + img{
+                display: block;
+            }
+
+
+            .yatay{
+                background-color: rgb(138, 77, 133);
+                width: 250px;
+                padding: 10px;
+            }
+            
+            .yatay ul li{
+            padding: 20px;
+            display: block;
+            cursor: pointer;
+            border-bottom: 1px solid #fff;
+            }
+            
+            .yatay ul li:last-child{
+            border:none;
+            }
+            
+            .yatay ul li:hover{
+            background-color: rgb(122, 28, 126);
+            padding: 25px 30px;
+            }
+            
+            .yatay ul li a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 16px;
+            
+            }.sm div{
+                display: inline-block;
+            }
+            .sm div a{
+                display:inline-flex;
+                width: 100px;
+                height: 100px;
+                font-size: 50px;
+                margin: 10px;
+                background: rgb(17, 104, 161);
+                color: rgb(75, 196, 233);
+                align-items: center;
+                text-decoration: none;
+                justify-content: center;
+                border: 3PX solid rgb(17, 104, 161); 
+                border-radius: 100px;
+            }
+            .sm a:hover{
+                background: rgb(99, 132, 240);
+            }
+            
+            .sm a i{
+                transition: 0.5s all;
+            }
+            
+            .sm a:hover > i{
+            transform: scale(1.5) rotate(360deg);
+            }
+
+
+            body{
+                background: url(101576.jpg);
+                background-size: cover;
+            }
+            
+            .boxa{
+                margin: auto;
+                padding: 30px;
+                margin-top: 15px;
+                width: 400px;
+                background:#fff;
+                opacity: 75%;
+                text-align: center;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            
+            .boxa img{
+                margin-top: 20px ;
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+            }
+            .boxa img:hover{
+                transform: scale(0.85);
+            }
+            
+            .boxa h1{
+                color: rgb(139, 139, 255);
+                font-size: 30px;
+                letter-spacing: 10px;
+                font-weight: 700;
+            }
+            
+            .boxa h4{
+                color: rgb(139, 139, 255);
+                font-size: 20px;
+                letter-spacing: 10px;
+                font-weight: 700;
+            }
+            
+            .boxa p{
+                margin: 10px;
+                padding: 10px;
+                letter-spacing: 3px;
+                 }
+              
+            ul li{
+                display: inline;
+                margin: 5px;
+                list-style: none;
+            }
+            
+            .boxa li a{
+                font-size: 25px;
+                color:rgb(53, 53, 4);
+            }
+            
+            .boxa li a:hover{
+                color: rgb(165, 88, 88);
+                font-size: 26px;
+            }
+
+            /*kayıt*/
+            body{
+                margin: 0;
+                padding: 0;
+                background:rgb(189, 218, 216);
+            }
+            
+            .kayit_formu{
+                width: 300px;
+                padding: 20px;
+                text-align: center;
+                background: url(101576.jpg);
+                border-radius: 3%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                overflow: hidden;
+            }
+            
+            .kayit_formu h2{
+                margin-top: 10px;
+                color: rgb(180, 180, 219);
+                font-size: 50px;
+            }
+            
+            .kayit_formu input{
+                display: block;
+                width: 100%;
+                padding: 0 16px;
+                height: 50px;
+                text-align: center;
+                box-sizing: border-box;
+                border: none;
+            }
+            
+            .metin{
+                margin: 20px 0;
+                border-radius: 6px;
+            }
+            
+            .btn{
+                margin-top: 60px;
+                margin-bottom: 20px;
+                background:rgb(131, 15, 96);
+                color: #fff;
+                border-radius: 30px;
+                cursor: pointer;
+                transition: 0.8s;
+                display: block;
+            }
+            
+            .btn:hover{
+                transform: scale(0.96);
+                background: rgb(202, 91, 137);
+                color: rgb(151, 104, 141);
+            }
+            
+            .kayit_formu a{
+                text-decoration: none;
+                color: rgb(212, 61, 200);
+                font-size: 16px;
+                font-weight: 600;
+                padding: 10px;
+                transition: 0.8s;
+                display: block;
+            }
+            
+            .kayit_formu a:hover{
+                color: rgb(126, 59, 180);
+                font-weight: 600;
+                text-decoration:underline;
+            }
+            
+
+            
